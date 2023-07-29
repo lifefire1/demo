@@ -1,0 +1,21 @@
+# config PostgreSQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: myuser
+    password: secret
+    driver-class-name: org.postgresql.Driver
+
+  # RabbitMQ Configuration
+  rabbitmq:
+    host: rabbitmqui  # Use the service name 'rabbitmqui' as the host for RabbitMQ
+    port: 5672
+    username: guest
+    password: guest
+
+
+# server config
+server:
+  servlet:
+    context-path: /
+  port: 7000

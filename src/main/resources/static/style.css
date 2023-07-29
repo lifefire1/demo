@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f5; /* Изумрудный оттенок */
+    color: #333; /* Темно-синий текст */
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('sun.jpg'); /* Добавляем фоновый рисунок */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень блока */
+    width: 350px; /* Изменили ширину контейнера */
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2196F3; /* Яркий синий заголовок */
+    margin-bottom: 30px; /* Добавили отступ снизу для заголовка */
+}
+
+/* Общие стили для всех полей ввода */
+input {
+    width: 80%; /* Устанавливаем ширину поля ввода на 80% от контейнера */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #2196F3; /* Красивый синий цвет рамки */
+    border-radius: 4px;
+}
+
+/* Стили для кнопки */
+button {
+    background-color: #2196F3; /* Яркий синий цвет кнопки */
+    color: #fff; /* Белый текст на кнопке */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Плавная анимация при изменении свойств */
+}
+
+button:hover {
+    background-color: #0d8eef; /* Темнее синий цвет при наведении */
+    transform: scale(1.1); /* Увеличиваем размер кнопки на 10% при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень при наведении */
+}

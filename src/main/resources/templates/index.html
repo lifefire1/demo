@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мессенджер</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f5f5; /* Изумрудный оттенок */
+      color: #333; /* Темно-синий текст */
+      text-align: center;
+      margin-top: 50px;
+      background-image: url('/sun.jpg'); /* Добавляем фоновый рисунок */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень блока */
+      width: 80%; /* Изменили ширину контейнера */
+      margin: 0 auto;
+      max-width: 800px; /* Максимальная ширина контейнера */
+    }
+
+    h1 {
+      color: #2196F3; /* Яркий синий заголовок */
+      margin-bottom: 30px; /* Добавили отступ снизу для заголовка */
+    }
+
+    /* Стили для кнопки */
+    .voice-button {
+      background-color: #2196F3; /* Яркий синий цвет кнопки */
+      color: #fff; /* Белый текст на кнопке */
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50%; /* Круглая форма кнопки */
+      cursor: pointer;
+      font-size: 24px;
+      position: fixed;
+      bottom: 30px;
+      right: 47%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+    }
+
+    .chat-history {
+      text-align: left;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .message {
+      background-color: #f0f0f0;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    .message.user-message {
+      background-color: #d9edff;
+    }
+
+    .message.bot-message {
+      background-color: #dff0d8;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+  <h1>Мессенджер</h1>
+
+  <div class="chat-history">
+    <div class="message user-message">Привет! Как дела?</div>
+    <div class="message bot-message">Привет! Я бот. Всё хорошо, спасибо!</div>
+    <div class="message user-message">Отлично! А что нового?</div>
+    <div class="message bot-message">Пока ничего особенного, но скоро будут новости!</div>
+    <!-- Выведите здесь историю чата с сообщениями -->
+  </div>
+
+  <button class="voice-button">&#128227;</button>
+</div>
+
+<script src="/audioScript.js"></script>
+
+
+</body>
+</html>

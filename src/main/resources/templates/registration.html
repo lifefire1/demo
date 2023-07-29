@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на сайте</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+<div class="container">
+    <h1>Присоединяйтесь к нам!</h1>
+    <input type="text" id="name" placeholder="Ваше имя" style="width: 80%;">
+    <input type="text" id="email" placeholder="Ваш Email" style="width: 80%;">
+    <input type="password" id="password" placeholder="Введите пароль" style="width: 80%;">
+    <input type="password" id="confirmPassword" placeholder="Подтвердите пароль" style="width: 80%;">
+    <input type="tel" id="phoneNumber" placeholder="Ваш номер телефона" style="width: 80%;">
+    <button onclick="sendJSON()">Зарегистрироваться</button>
+</div>
+
+<script th:src="@{/script.js}"></script>
+</body>
+</html>
